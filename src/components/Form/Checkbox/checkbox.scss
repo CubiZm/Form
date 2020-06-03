@@ -1,0 +1,35 @@
+.field-checkbox {
+  input {
+    display: none;
+  }
+
+  label {
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.4;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    content: "✓";
+  }
+}

@@ -1,0 +1,30 @@
+.form {
+  &__title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @media(min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1140px) {
+      margin-bottom: 32px;
+      font-size: 30px;
+    }
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+    border: 0;
+
+    @media (min-width: 1140px) {
+      margin-bottom: 48px;
+    }
+  }
+}
