@@ -1,9 +1,9 @@
 .field-checkbox {
-  input {
+  &__input {
     display: none;
   }
 
-  label {
+  &__label {
     font-size: 13px;
     color: #999999;
     line-height: 1.4;
@@ -13,7 +13,7 @@
     cursor: pointer;
   }
 
-  input[type="checkbox"] + label::before {
+  &__input + &__label::before {
     content: "";
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
     transform: translateY(-50%);
   }
 
-  input[type="checkbox"]:checked + label::before {
+  &__input:checked + &__label::before {
     content: "✓";
   }
 }

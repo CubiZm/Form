@@ -6,11 +6,13 @@ function Checkbox(props) {
     <div className="field-checkbox">
       <input
         id="remember-me"
-        className="field-input"
+        className="field-checkbox__input"
         type="checkbox"
         value={props.option}
       />
-      <label htmlFor="remember-me">{props.option}</label>
+      <label className="field-checkbox__label" htmlFor="remember-me">
+        {props.option}
+      </label>
     </div>
   );
 }

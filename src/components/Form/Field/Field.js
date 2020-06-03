@@ -6,7 +6,11 @@ function Field(props) {
     <div className="field-wrap">
       <label className="field-label">
         <span className="field-label__title">{props.title}</span>
-        <input className="field-label__input" type={props.type} required></input>
+        <input
+          className="field-label__input"
+          type={props.type}
+          required
+        ></input>
       </label>
     </div>
   );

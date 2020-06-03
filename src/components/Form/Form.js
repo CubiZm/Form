@@ -9,9 +9,9 @@ function Form() {
     <form className="form">
       <h1 className="form__title">Account Login</h1>
       <fieldset className="form__fieldset">
-      <Field title="E-Mail" type="email" />
-      <Field title="Password" type="password" />
-      <Checkbox option="Запомнить меня" />
+        <Field title="E-Mail" type="email" />
+        <Field title="Password" type="password" />
+        <Checkbox option="Запомнить меня" />
       </fieldset>
 
       <Button>Login</Button>
